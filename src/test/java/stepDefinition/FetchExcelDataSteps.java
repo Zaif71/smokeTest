@@ -32,18 +32,18 @@ public class FetchExcelDataSteps {
             workbook = new XSSFWorkbook(file);
             Sheet sheet = workbook.getSheetAt(0);
 
-
-            String username = sheet.getRow(0).getCell(0).getStringCellValue();
-            String password = sheet.getRow(0).getCell(1).getStringCellValue();
-
-            // Enter username and password
-            driver.findElement(By.xpath("//input[@name='username']")).sendKeys(username); // Adjust the selector as needed
-            driver.findElement(By.xpath("//input[@type='password']")).sendKeys(password); // Adjust the selector as needed
-            driver.findElement(By.xpath("//button[@type='submit']")).click(); // Adjust the selector as needed
-
-            // Close the Excel file
-            workbook.close();
-            file.close();
+//
+//            String username = sheet.getRow(0).getCell(0).getStringCellValue();
+//            String password = sheet.getRow(0).getCell(1).getStringCellValue();
+//
+//            // Enter username and password
+//            driver.findElement(By.xpath("//input[@name='username']")).sendKeys(username); // Adjust the selector as needed
+//            driver.findElement(By.xpath("//input[@type='password']")).sendKeys(password); // Adjust the selector as needed
+//            driver.findElement(By.xpath("//button[@type='submit']")).click(); // Adjust the selector as needed
+//
+//            // Close the Excel file
+//            workbook.close();
+//            file.close();
 
 
             driver.quit();
